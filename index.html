@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kavitha B | CSE Student Portfolio</title>
+<style>
+:root{--bg:#0e1420;--panel:#151d2e;--line:#243049;--text:#e8edf7;--mute:#9aa7c0;--accent:#4f8cff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 "Segoe UI",system-ui,Arial,sans-serif}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+header{position:sticky;top:0;background:rgba(14,20,32,.92);border-bottom:1px solid var(--line);z-index:5}
+nav{max-width:960px;margin:auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+nav b{font-size:1.15rem}
+nav div a{color:var(--mute);text-decoration:none;margin-left:20px}
+nav div a:hover{color:var(--text)}
+main{max-width:960px;margin:auto;padding:0 24px}
+.hero{padding:96px 0 72px}
+.hero p.hi{color:var(--accent);margin:0;font-weight:600}
+h1{font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin:.2em 0}
+.hero .role{font-size:1.3rem;color:var(--mute);margin:0 0 20px}
+.hero .lead{max-width:60ch;color:var(--mute)}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;margin:12px 12px 0 0}
+.btn.p{background:var(--accent);color:#06101f}
+.btn.s{border:1px solid var(--line);color:var(--text)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{margin:0 0 8px;font-size:1.1rem}
+.card p{margin:0 0 12px;color:var(--mute);font-size:.98rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:0}
+.tags li{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 16px}
+.skills h3{font-size:1rem;color:var(--mute);margin:20px 0 10px;font-weight:600}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;color:var(--mute);font-size:.9rem}
+@media(max-width:560px){nav div a{margin:0 14px 0 0}.hero{padding:64px 0 48px}}
+</style>
+</head>
+<body>
+<header><nav><b>Kavitha B</b>
+<div><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav></header>
+<main>
+<div class="hero">
+<p class="hi">Hello, I'm</p>
+<h1>Kavitha B</h1>
+<p class="role">3rd-semester Computer Science and Engineering student</p>
+<p class="lead">I am learning to program in C and Java, with an interest in frontend and backend development.</p>
+<a class="btn p" href="#projects">View my projects</a><a class="btn s" href="#contact">Contact</a>
+</div>
+
+<section id="about">
+<h2>About</h2>
+<p>I am a CSE-A student (SRN R25EF114) in my third semester. I enjoy programming and want to build strong fundamentals in problem solving and software development.</p>
+<p>So far I have set up my coding environment, used Git and GitHub for version control, practised pair programming with GitLens and Live Share, and started solving LeetCode problems.</p>
+<p><b>Goal:</b> to strengthen my programming and problem-solving fundamentals and build real frontend and backend projects.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<article class="card"><h3>Hello World in C</h3>
+<p>Set up VS Code and the GCC compiler, then wrote, compiled and ran my first C program.</p>
+<a href="https://github.com/Kavita-oc/hello-world-c">View repository on GitHub</a></article>
+<article class="card"><h3>Pair programming with GitLens and Live Share</h3>
+<p>Edited a file in real time with a partner, wrote and reviewed a greet() function, and used GitLens to inspect who changed each line.</p></article>
+<article class="card"><h3>LeetCode Solutions</h3>
+<p>Solutions with documented approaches to Two Sum, Reverse a String, Valid Anagram, Best Time to Buy and Sell Stock, Longest Common Prefix, Binary Search, Move Zeroes and Valid Parentheses.</p>
+<a href="https://github.com/Kavita-oc/leetcode-solutions">View repository on GitHub</a></article>
+</div>
+</section>
+
+<section id="skills" class="skills">
+<h2>Skills</h2>
+<h3>Programming</h3><ul class="tags"><li>C</li><li>Java</li></ul>
+<h3>Web development</h3><ul class="tags"><li>Frontend</li><li>Backend</li></ul>
+<h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li><li>GitLens</li><li>Live Share</li></ul>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>You can find my work on GitHub.</p>
+<a class="btn p" href="https://github.com/Kavita-oc">Visit my GitHub profile</a>
+</section>
+</main>
+<footer>&copy; Kavitha B</footer>
+</body>
+</html>
